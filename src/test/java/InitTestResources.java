@@ -2,10 +2,11 @@ import Driver.DriverFactory;
 import Operation.Operations;
 import Page.Pages;
 import Util.InitProperties;
-import io.appium.java_client.pagefactory.TimeOutDuration;
+//import io.appium.java_client.pagefactory.TimeOutDuration;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -15,7 +16,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class InitTestResources {
 
-    private static TimeOutDuration timeOutDuration = new TimeOutDuration(10, TimeUnit.SECONDS);
+//    private static TimeOutDuration timeOutDuration = new TimeOutDuration(10, TimeUnit.SECONDS);
+    private static final long TIMEOUT_SECONDS = 10;
+    private static Duration TimeOutDuration = Duration.ofSeconds(TIMEOUT_SECONDS);
     @Before
     public void initEvery(){
 

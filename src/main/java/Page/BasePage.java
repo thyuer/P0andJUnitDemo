@@ -3,9 +3,10 @@ package Page;
 import Driver.DriverFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.pagefactory.TimeOutDuration;
+//import io.appium.java_client.pagefactory.TimeOutDuration;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -18,8 +19,10 @@ public class BasePage {
     public static AppiumDriver driver = DriverFactory.getAndroidDriver();
 
     //超时时间
-    private final int TIMEOUT = 10;
-    TimeOutDuration timeOutDuration = new TimeOutDuration(10, TimeUnit.SECONDS);
+//    private final int TIMEOUT = 10;
+    private final long TIMEOUT_SECONDS = 10;
+
+    Duration timeOutDuration = Duration.ofSeconds(TIMEOUT_SECONDS);
 
     public BasePage(){
 

@@ -5,10 +5,11 @@ import Operation.Operations;
 import Page.Pages;
 import Util.InitProperties;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.TimeOutDuration;
+//import io.appium.java_client.pagefactory.TimeOutDuration;
 import org.junit.After;
 import org.junit.Before;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 /**

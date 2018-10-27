@@ -6,9 +6,10 @@ import Page.AndroidPages.MobikePage;
 import Page.AndroidPages.NewDemo;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.pagefactory.TimeOutDuration;
+//import io.appium.java_client.pagefactory.TimeOutDuration;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.Duration;
 /**
  * Created by duzhe on 2018/3/20.
  *
